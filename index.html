@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS 3D Cube</title>
+    <base href="./">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <article class="container">
+      <h1 class="heading">CSS 3D Cube</h1>
+      <p class="description">Chirality: right-handed, counterclockwise.</p>
+      <section class="options">
+        <button class="button front" onclick="show('front')">Show front</button>
+        <button class="button right" onclick="show('right')">Show right</button>
+        <button class="button top" onclick="show('top')">Show top</button>
+        <button class="button bottom" onclick="show('bottom')">Show bottom</button>
+        <button class="button left" onclick="show('left')">Show left</button>
+        <button class="button back" onclick="show('back')">Show back</button>
+        <button class="button backface" onclick="toggle('backface')">Toggle backface</button>
+      </section>
+      <section class="content">
+        <div class="stage">
+          <div class="cube front">
+            <figure class="face front">1</figure>
+            <figure class="face right">2</figure>
+            <figure class="face top">3</figure>
+            <figure class="face bottom">4</figure>
+            <figure class="face left">5</figure>
+            <figure class="face back">6</figure>
+          </div>
+        </div>
+      </section>
+    </article>
+    <script src="./script.js"></script>
+  </body>
+</html>
